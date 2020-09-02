@@ -54,7 +54,7 @@ static int try_to_freeze_tasks(bool user_only)
 				continue;
 
 			if (!freezer_should_skip(p))
-				todo++;
+				todo+=1;
 		}
 		read_unlock(&tasklist_lock);
 
